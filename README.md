@@ -24,7 +24,7 @@ Ringkasan jumlah film: total, sudah ditonton, dan belum ditonton.
 ### Pengelolaan
 Daftar film dalam tabel yang ditampilkan dengan `@foreach`.
 
-![Halaman Pengelolaan](screenshots/pengelolaan.jpeg)
+![Halaman Pengelolaan](screenshots/pengelolalaan.jpeg)
 
 ### Modal Detail
 Popup detail film yang muncul saat tombol Detail diklik.

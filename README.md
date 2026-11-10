@@ -67,35 +67,6 @@ Tugas UTS Pemrograman Web. Mafilm adalah aplikasi web sederhana untuk mencatat f
 | `<x-modal>` | `pengelolaan.blade.php` |
 | `@foreach` | `pengelolaan.blade.php` |
 
-## Cara Menjalankan
-
-1. Clone repository:
-   ```bash
-   git clone https://github.com/[username]/[nama-repo].git
-   cd [nama-repo]
-   ```
-2. Install dependency:
-   ```bash
-   composer install
-   ```
-3. Salin file environment dan buat app key:
-   ```bash
-   cp .env.example .env
-   php artisan key:generate
-   ```
-   (Di Windows CMD, gunakan `copy .env.example .env`.)
-4. Buka file `.env`, lalu ubah pengaturan berikut supaya tidak memakai database:
-   ```
-   SESSION_DRIVER=file
-   CACHE_STORE=file
-   QUEUE_CONNECTION=sync
-   ```
-5. Jalankan server:
-   ```bash
-   php artisan serve
-   ```
-6. Buka `http://127.0.0.1:8000` di browser.
-
 ## Catatan
 
 - Aplikasi tidak memakai database, jadi `php artisan migrate` tidak perlu dijalankan.

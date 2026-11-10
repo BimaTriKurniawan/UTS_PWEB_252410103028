@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f1ea; color: #2b2b2b; min-height: 100vh; display: flex; flex-direction: column; }
+
+.navbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 12px 24px; background: #3d405b; color: #fff; }
+.navbar .brand { font-weight: bold; }
+.navbar .menu a { color: #ddd; text-decoration: none; margin-left: 16px; }
+.navbar .menu a.aktif { color: #fff; border-bottom: 2px solid #e07a5f; }
+
+.container { width: 100%; max-width: 900px; margin: 24px auto; padding: 0 16px; flex: 1; }
+.footer { text-align: center; padding: 16px; font-size: 14px; color: #666; border-top: 1px solid #ddd; }
+
+.kartu { background: #fff; padding: 20px; border-radius: 8px; border: 1px solid #ddd; }
+.kartu-login { max-width: 380px; margin: 60px auto; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+
+label { display: block; margin-top: 12px; }
+input { width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #aaa; border-radius: 4px; }
+.error { color: #c0392b; }
+
+.btn { margin-top: 16px; padding: 8px 16px; background: #e07a5f; color: #fff; border: 0; border-radius: 4px; cursor: pointer; }
+.btn-kecil { margin: 0; padding: 4px 10px; }
+
+.tabel-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: #fff; }
+th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
+th { background: #81b29a; color: #fff; }
+
+.modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.5); justify-content: center; align-items: center; padding: 16px; }
+.modal.buka { display: flex; }
+.modal-isi { background: #fff; width: 100%; max-width: 400px; border-radius: 8px; padding: 20px; }
+.modal-kepala { display: flex; justify-content: space-between; align-items: center; }
+.tutup { background: none; border: 0; font-size: 24px; cursor: pointer; }
